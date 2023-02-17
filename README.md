@@ -2,4 +2,4 @@
 
 This is a place where I will put my notes for ib.
 
-[link](ibstudyguide.github.io)
+[link](https://ibstudyguide.github.io)
