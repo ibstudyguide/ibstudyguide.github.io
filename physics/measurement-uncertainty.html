@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Measurement and Uncertainty</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#measurement-and-uncertainty">Measurement and Uncertainty</a>
+<ul>
+<li><a href="#uncertainties-and-errors">Uncertainties and Errors</a></li>
+<li><a href="#si-units">SI Units</a></li>
+<li><a href="#scalars-vs-vectors">Scalars vs Vectors</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="measurement-and-uncertainty">Measurement and Uncertainty</h1>
+<h2 id="uncertainties-and-errors">Uncertainties and Errors</h2>
+<p>Calculating uncertainties and errors is an important part of scientific inquiry and experimental design. Here’s a step-by-step guide on how to calculate uncertainties and errors:</p>
+<ol>
+<li>
+<p>Determine the sources of uncertainty: Before you can calculate the uncertainties, you need to identify the sources of uncertainty in your measurement. There are two types of uncertainties: random and systematic. Random uncertainties are due to the inherent limitations of your measuring device or the variations in the quantity being measured. Systematic uncertainties, on the other hand, arise from consistent errors in the experimental setup or measuring instruments.</p>
+</li>
+<li>
+<p>Propagate uncertainties: Once you have identified the sources of uncertainty, you need to propagate them through the calculations. Propagation of uncertainty is a mathematical process that calculates the uncertainty in the final result based on the uncertainties in the input values. The most common method for propagating uncertainties is the ‘uncertainty product rule’ or the ‘uncertainty sum rule’.</p>
+<ul>
+<li>
+<p>For the product rule (when <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>×</mo><mi>B</mi><mo>=</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">A \times B = C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.76666em; vertical-align: -0.08333em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathnormal" style="margin-right: 0.05017em;">B</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathnormal" style="margin-right: 0.07153em;">C</span></span></span></span></span>), the formula is: <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>∆</mtext><mi>C</mi><mi mathvariant="normal">/</mi><mi>C</mi><mo>=</mo><mo stretchy="false">(</mo><mtext>∆</mtext><mi>A</mi><mi mathvariant="normal">/</mi><mi>A</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy="false">(</mo><mtext>∆</mtext><mi>B</mi><mi mathvariant="normal">/</mi><mi>B</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">∆C/C = (∆A/A)^2 + (∆B/B)^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">∆</span><span class="mord mathnormal" style="margin-right: 0.07153em;">C</span><span class="mord">/</span><span class="mord mathnormal" style="margin-right: 0.07153em;">C</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord">∆</span><span class="mord mathnormal">A</span><span class="mord">/</span><span class="mord mathnormal">A</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord">∆</span><span class="mord mathnormal" style="margin-right: 0.05017em;">B</span><span class="mord">/</span><span class="mord mathnormal" style="margin-right: 0.05017em;">B</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span>, where <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathnormal" style="margin-right: 0.07153em;">C</span></span></span></span></span> is the final result, <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathnormal">A</span></span></span></span></span> and <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathnormal" style="margin-right: 0.05017em;">B</span></span></span></span></span> are the input values, and <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>∆</mtext><mi>A</mi></mrow><annotation encoding="application/x-tex">∆A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord">∆</span><span class="mord mathnormal">A</span></span></span></span></span> and <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>∆</mtext><mi>B</mi></mrow><annotation encoding="application/x-tex">∆B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord">∆</span><span class="mord mathnormal" style="margin-right: 0.05017em;">B</span></span></span></span></span> are their respective uncertainties.</p>
+</li>
+<li>
+<p>For the sum rule (when <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>+</mo><mi>B</mi><mo>=</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">A + B = C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.76666em; vertical-align: -0.08333em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathnormal" style="margin-right: 0.05017em;">B</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathnormal" style="margin-right: 0.07153em;">C</span></span></span></span></span>), the formula is: <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>∆</mtext><mi>C</mi><mo>=</mo><mtext>∆</mtext><msup><mi>A</mi><mn>2</mn></msup><mo>+</mo><mtext>∆</mtext><msup><mi>B</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">∆C = ∆A^2 + ∆B^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord">∆</span><span class="mord mathnormal" style="margin-right: 0.07153em;">C</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.897438em; vertical-align: -0.08333em;"></span><span class="mord">∆</span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.814108em; vertical-align: 0em;"></span><span class="mord">∆</span><span class="mord"><span class="mord mathnormal" style="margin-right: 0.05017em;">B</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span>, where <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathnormal" style="margin-right: 0.07153em;">C</span></span></span></span></span> is the final result, <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathnormal">A</span></span></span></span></span> and <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathnormal" style="margin-right: 0.05017em;">B</span></span></span></span></span> are the input values, and <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>∆</mtext><mi>A</mi></mrow><annotation encoding="application/x-tex">∆A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord">∆</span><span class="mord mathnormal">A</span></span></span></span></span> and <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>∆</mtext><mi>B</mi></mrow><annotation encoding="application/x-tex">∆B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord">∆</span><span class="mord mathnormal" style="margin-right: 0.05017em;">B</span></span></span></span></span> are their respective uncertainties.</p>
+</li>
+</ul>
+<p>These formulas work for both random and systematic uncertainties.</p>
+</li>
+<li>
+<p>Evaluate the error bars: Error bars are graphical representations of uncertainties. They are usually represented as vertical lines on a graph, indicating the range of uncertainty for each data point. The length of the error bars depends on the magnitude of the uncertainty. The larger the uncertainty, the longer the error bar.</p>
+</li>
+<li>
+<p>Record your results: Once you have calculated the uncertainties and error bars, record them in your lab notebook or report. It’s important to be clear about the sources of uncertainty, the method of propagation, and the range of uncertainty for each data point.</p>
+</li>
+<li>
+<p>Evaluate your results: Finally, it’s important to evaluate your results and determine the significance of the uncertainties. You should ask yourself questions such as: Are the uncertainties acceptable for the purpose of the experiment? Do they affect the conclusions drawn from the data? What can be done to reduce the uncertainties in future experiments?</p>
+</li>
+</ol>
+<p>By following these steps, you can calculate uncertainties and errors with confidence and accuracy. Remember, uncertainties are an inherent part of scientific measurements, and it’s important to take them into account when interpreting experimental results.</p>
+<h2 id="si-units">SI Units</h2>
+<h3 id="the-seven-base-units">The seven base units</h3>
+<p>The SI system defines seven base units that are used to express all physical quantities. These are:</p>
+<ul>
+<li>Length: meter (m)</li>
+<li>Mass: kilogram (kg)</li>
+<li>Time: second (s)</li>
+<li>Electric current: ampere (A)</li>
+<li>Temperature: Kelvin (K)</li>
+<li>Amount of substance: mole (mol)</li>
+<li>Luminous intensity: candela (cd)</li>
+</ul>
+<h3 id="prefixes">Prefixes</h3>
+<p>The SI system uses prefixes to denote multiples or submultiples of the base units. For example, the prefix “kilo” (k) means 1000 times the base unit, so one kilogram (kg) is equal to 1000 grams (g). Similarly, the prefix “milli” (m) means 1/1000th of the base unit, so one millisecond (ms) is equal to 1/1000th of a second (s).</p>
+<h3 id="derived-units">Derived units</h3>
+<p>In addition to the base units, the SI system defines derived units, which are combinations of the base units. For example, the unit for velocity is meters per second (m/s), which is derived from the base units of length and time. Other derived units include units for force (Newton), energy (Joule), and power (Watt).</p>
+<p>The SI system is designed so that all derived units are expressed in terms of the base units in a coherent way. This means that the units are related to each other by a set of defined conversion factors, and that there are no numerical constants involved in the conversions. For example, the unit of force (Newton) is defined as 1 kilogram-meter per second squared (kg m/s^2), which is a coherent combination of the base units of mass, length, and time.</p>
+<h2 id="scalars-vs-vectors">Scalars vs Vectors</h2>
+<h3 id="definitions">Definitions:</h3>
+<h4 id="scalar">Scalar</h4>
+<ul>
+<li>A scalar quantity is a quantity that is completely described by its magnitude. Examples of scalar quantities include length, mass, time, temperature, speed, and energy</li>
+<li>Scalar quantities are represented using a single numerical value with a unit. For example, the length of a pencil is 15 cm, or the temperature of a room is 25°C.</li>
+<li>Scalar quantities can be added, subtracted, multiplied, and divided using regular arithmetic operations. For example, the sum of two masses, 2 kg and 3 kg, is 5 kg.</li>
+</ul>
+<h4 id="vector">Vector</h4>
+<ul>
+<li>A vector quantity is a quantity that is described by both its magnitude and its direction. Examples of vector quantities include displacement, velocity, acceleration, force, and momentum.</li>
+<li>Vector quantities are represented using both a numerical value and a direction. They can be represented graphically as an arrow, where the length of the arrow represents the magnitude of the vector, and the direction of the arrow represents the direction of the vector.</li>
+</ul>
+<h3 id="mathematical-operations">Mathematical operations</h3>
+<ul>
+<li>Scalar quantities can be added, subtracted, multiplied, and divided using regular arithmetic operations. For example, the sum of two masses, 2 kg and 3 kg, is 5 kg.</li>
+<li>Vector quantities cannot be added, subtracted, multiplied, and divided using regular arithmetic operations. Vector addition and subtraction require the use of vector components, and vector multiplication requires the use of vector dot product or vector cross product.</li>
+</ul>
+<h3 id="units">Units</h3>
+<ul>
+<li>Scalar quantities have only one type of unit associated with them. For example, the unit for length is meters, the unit for time is seconds, and the unit for mass is kilograms.</li>
+<li>Vector quantities have both a magnitude and a direction, so they require two types of units. The magnitude of a vector is expressed in terms of a scalar unit, while the direction of a vector is expressed using a direction unit. For example, the unit for velocity is meters per second (m/s), where meters represent the scalar unit and seconds represent the direction unit.</li>
+</ul>
+
+    </div>
+  </div>
+</body>
+
+</html>
